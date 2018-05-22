@@ -1,6 +1,6 @@
 $(document).ready(function () {
     
-    // first screen slider
+    // home block slider
     $('#home .img-slider ul').slick({
         dots: true,
         infinite: true,
@@ -12,6 +12,23 @@ $(document).ready(function () {
         autoplaySpeed: 5000,
         pauseOnHover: false,
         pauseOnFocus: false
+    });
+
+    // comments slider
+
+    $('#testimonials .testimonials__slider--comments').slick({
+        dots: false,
+        speed: 1000,
+        fade: false,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 10000,
+        pauseOnHover: true,
+        pauseOnFocus: false,
+        slidesToShow:1,
+        slidesToScroll:1,
+        prevArrow: $('.js-testimonials-left-button'),
+        nextArrow: $('.js-testimonials-right-button')
     });
     
     // inputs 
