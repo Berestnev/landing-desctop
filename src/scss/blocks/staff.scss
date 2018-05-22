@@ -1,0 +1,56 @@
+@import "../partials/params";
+@import "../partials/mixins";
+@import "../adds/fonts";
+
+.staff {
+  @include headers;
+
+  background-color: $section-background-color;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  &__banners {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &--banner {
+      width: 23.076923%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & .img {
+        width: 89.629629%;
+        margin-bottom: 50px;
+        & img {
+          width: 100%;
+          transition: all 0.4s;
+          border-color: white;
+
+          @include respond-to(d) {
+            &:hover {
+              box-sizing: border-box;
+              border: 5px solid $button-background-color;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+      & .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & .name {
+          font-size: 20px;
+          line-height: 35px;
+          color: $text-color-green;
+        }
+        & .position {
+          font-family: $FontPTSerifRegular;
+          font-size: 14px;
+          color: $text-color-grey;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}

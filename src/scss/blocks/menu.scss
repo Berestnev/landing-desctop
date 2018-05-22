@@ -1,0 +1,89 @@
+@import "../partials/params";
+@import "../partials/mixins";
+@import "../adds/fonts";
+
+.menu {
+  background-color: $section-background-color;
+  padding: 110px 0 0;
+
+
+  @include headers;
+
+  &__content {
+
+
+
+    &--banners {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      & .banner {
+        width: 23.076923%;
+        background-color: $banners-background-color;
+        position: relative;
+        margin-bottom: 57px;
+        &-img {
+          width: 100%;
+          background-color: #ffffff;
+
+          & img {
+            margin: 5.555555%;
+            width: 88.888888%;
+          }
+        }
+
+
+        & h4 {
+          font-size: 16px;
+          text-transform: uppercase;
+          color: $text-color-grey;
+          margin: 27px 0;
+          text-align: center;
+        }
+        & .arrow-down {
+          width: 14.074074%;
+          height: 30px;
+          border-radius: 50%;
+          position: relative;
+          bottom: -15px;
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $section-background-color;
+          box-sizing: border-box;
+          @include respond-to(d) {
+            &:hover {
+              border-top: 2px solid $button-background-color;
+            }
+          }
+
+          & a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            & i {
+
+            }
+          }
+        }
+      }
+    }
+    & p {
+      color: $text-color-green;
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 55px;
+    }
+    & button {
+      margin-bottom: 120px;
+    }
+    @include buttons;
+  }
+
+
+}

@@ -1,0 +1,250 @@
+@import "../adds/fonts";
+
+
+$mobile: 750px;
+$tablet: 1200px;
+$desctop: 1800px;
+
+
+@mixin respond-to($media) {
+  @if $media == m {
+    @media only screen and (max-width: $mobile) {
+      @content;
+    }
+  } @else if $media == mm {
+    @media only screen and (max-width: 359px) {
+      @content;
+    }
+  } @else if $media == ls-m {
+    @media only screen and (max-width: $mobile) and (orientation: landscape) {
+      @content;
+    }
+  } @else if $media == t {
+    @media only screen and (max-width: $tablet) {
+      @content;
+    }
+  } @else if $media == ls-t {
+    @media only screen and (max-width: $tablet) and (orientation: landscape) {
+      @content;
+    }
+  } @else if $media == only-t {
+    @media only screen and (max-width: $tablet) and (min-width: $mobile) {
+      @content;
+    }
+
+  } @else if $media == d {
+    @media only screen and (min-width: $tablet) {
+      @content;
+    }
+
+  } @else if $media == dm {
+    @media only screen and (min-width: $tablet) and (max-width: $desctop) {
+      @content;
+    }
+
+  } @else if $media == 1440 {
+    @media only screen and (max-width: 1380px) and (orientation: landscape) {
+      @content;
+    }
+  } @else if $media == 1280 {
+    @media only screen and (max-width: 1280px) and (orientation: landscape) {
+      @content;
+    }
+  } @else if $media == hover {
+    @media only screen and (min-width: $tablet + 1) {
+
+      @content;
+
+    }
+
+  }
+}
+
+@mixin hover {
+  @media only screen and (min-width: $tablet + 1) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+//@mixin pixel {
+//  background: url("/bg.png") center top no-repeat;
+//  & > * {
+//    opacity: 0.5;
+//  }
+//  @include respond-to(t) {
+//    background-image: url("/bg-t.png");
+//  }
+//  @include respond-to(m) {
+//    background-image: url("/bg-m.png");
+//  }
+//}
+
+//@include respond-to(hd) {}
+//@include respond-to(d) {}
+//@include respond-to(t) {}
+//@include respond-to(m) {}
+
+@mixin position($position) {
+  @if $position == center {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+  }
+  @if $position == centerY {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+  }
+  @if $position == centerX {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  @if $position == none {
+    position: relative;
+    transform: translate(0, 0);
+    top: auto;
+    left: auto;
+  }
+}
+
+@mixin style($style) {
+  @if $style == middle {
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      width: 1px;
+    }
+    &:before {
+      margin-left: -1px;
+    }
+  }
+  @if $style == clearfix {
+    &:before {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  @if $style == padding {
+    padding-left: 40px;
+    padding-right: 40px;
+    @include respond-to(t) {
+      padding-left: 33px;
+      padding-right: 33px;
+    }
+    @include respond-to(m) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+@mixin headers {
+
+  & .title {
+    @content;
+    height: 155px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    & > * {
+      position: absolute;
+    }
+    &__name {
+      text-transform: uppercase;
+      color: $text-color-green;
+    }
+    &__description {
+      top: 40%;
+      transform: translateY(-50%);
+      & h2 {
+        color: $text-color-black;
+        font-size: 35px;
+        text-align: center;
+        line-height: 1;
+      }
+    }
+
+    &__img {
+
+    }
+    &__border {
+      width: 111px;
+      height: 2px;
+      background-color: $text-color-grey;
+      bottom: 0;
+    }
+  }
+}
+
+@mixin buttons {
+  & button {
+    @content;
+    height: 60px;
+    width: 245px;
+    background-color: $button-background-color;
+    border: 0;
+    outline: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    @include respond-to(d) {
+      &:hover {
+        //cursor: pointer;
+        transition: all 0.4s;
+        background-color: darken($button-background-color, 10%);
+      }
+    }
+    & a {
+      height: 60px;
+      width: 245px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      font-family: $FontPTSerifBold;
+      text-transform: uppercase;
+      color: $text-color-white;
+    }
+  }
+}
+
+@mixin line {
+  & .line {
+    display: block;
+    height: 2px;
+    width: 111px;
+    background-color: $text-color-grey;
+    margin-bottom: 46px;
+  }
+}
+
+@mixin epic-sides() { // https://codepen.io/MichaelArestad/pen/qltuk
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    @content;
+  }
+}

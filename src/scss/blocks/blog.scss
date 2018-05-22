@@ -1,0 +1,77 @@
+@import "../partials/params";
+@import "../partials/mixins";
+@import "../adds/fonts";
+
+
+.blog {
+  @include headers;
+
+  &__articles {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &--article {
+      width: 31.623931%;
+      & .img {
+        width: 100%;
+        margin-bottom: 35px;
+        img {
+          width: 100%;
+        }
+      }
+      & .info {
+
+        & .date {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-bottom: 18px;
+          & p {
+            font-family: $FontPTSerifBold;
+            color: $text-color-green;
+            font-size: 14px;
+            & .month {
+              text-transform: uppercase;
+            }
+            & .day {
+
+            }
+            & .coma {
+
+            }
+            & .year {
+
+            }
+          }
+        }
+        & header {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          & .article-name {
+            width: 85%;
+            font-size: 22px;
+            color: $text-color-black;
+            line-height: 33px;
+            letter-spacing: 0;
+            text-align: center;
+            margin-bottom: 26px;
+
+          }
+          & .line {
+             display: block;
+             height: 2px;
+             width: 111px;
+             background-color: $text-color-grey;
+             margin-bottom: 46px;
+           }
+        }
+
+
+      }
+    }
+  }
+
+  @include buttons;
+}

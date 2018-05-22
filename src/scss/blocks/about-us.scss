@@ -1,0 +1,90 @@
+@import "../partials/params";
+@import "../partials/mixins";
+@import "../adds/fonts";
+
+
+.about-us {
+  z-index: 1;
+  background-color: $section-background-color;
+  margin-bottom: 0;
+  padding-bottom: 170px;
+  @include headers {
+    & .title__name, .title__description > h2 {
+      color: $text-color-white;
+    }
+    & .title__border {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+  &__background {
+    height: 586px;
+    width: 100%;
+    padding-top: 110px;
+    background-image: url("img/about-us/about-us-bgi.png");
+    background-size: cover;
+  }
+  & .wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+  &__header {
+
+  }
+
+  &__content {
+    display: flex;
+
+    & > div {
+      width: 50%;
+      box-sizing: border-box;
+    }
+    &--img {
+      height: 541px;
+
+      & img {
+        width: 100%;
+        height: 100%;
+
+      }
+    }
+    &--text {
+      padding: 95px 70px 75px 85px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #ffffff;
+
+
+
+      & h3 {
+        font-size: 22px;
+        line-height: 33px;
+        letter-spacing: 0;
+        @include respond-to(1280) {
+          font-size: 16px;
+        }
+      }
+      & p {
+        font-size: 14px;
+        letter-spacing: 0;
+        font-family: $FontPTSerifRegular;
+        @include respond-to(1280) {
+          font-size: 12px;
+        }
+        & span {
+          font-size: 28px;
+          @include respond-to(1280) {
+            font-size: 20px;
+          }
+        }
+      }
+
+      @include buttons {
+        left: 0!important;
+        transform: translateX(0)!important;
+      }
+    }
+  }
+}

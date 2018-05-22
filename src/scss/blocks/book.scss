@@ -1,0 +1,31 @@
+@import "../partials/params";
+@import "../partials/mixins";
+@import "../adds/fonts";
+
+.book {
+  margin-bottom: 0;
+  @include headers  {
+
+    & .title__name, .title__description > h2 {
+      color: $text-color-white;
+
+    }
+    & h2 {
+      font-size: 50px;
+    }
+    & .title__border {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+  }
+  height: 696px;
+  background-image: url("img/book/book.png");
+  background-size: cover;
+  & .title__description {
+    top: 50%!important;
+  }
+  & .wrapper {
+    padding-top: 196px;
+  }
+  @include buttons;
+}

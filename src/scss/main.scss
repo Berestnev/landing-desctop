@@ -1,0 +1,60 @@
+@import "partials/params";
+@import "partials/mixins";
+@import "adds/fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: $font-size-main;
+  letter-spacing: 1px;
+
+  @include respond-to(1280) {
+    font-size: 12px;
+  }
+}
+
+
+body {
+
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+  border-radius: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-appearance: none;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+
+  font-family: PTSerif-Bold;
+}
+
+section {
+  width: $section-width;
+  margin: 0 auto 110px;
+  position: relative;
+}
+
+.wrapper {
+  width: $wrapper-width;
+  margin: 0 auto;
+  position: relative;
+}
+.wrapper-sm {
+  width: 42.307692%;
+  margin: 0 auto;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color-green;
+
+}

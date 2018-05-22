@@ -1,0 +1,311 @@
+@import "../partials/params";
+@import "../partials/mixins";
+@import "../adds/fonts";
+
+
+
+
+.home {
+
+
+  &-header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    &__contacts {
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      line-height: 20px;
+
+      & .telephone {
+
+        & .icon {
+          height: 14px;
+          & svg {
+            transform: scale(-1,1);
+            fill: $text-color-green;
+            height: 14px;
+          }
+        }
+        & .number {
+
+        }
+        @include respond-to(d) {
+           &:hover {
+             & a {
+               color: $button-background-color;
+             }
+             & svg {
+               fill: $button-background-color;
+
+             }
+           }
+         }
+      }
+      & .e-mail {
+        text-transform: uppercase;
+        @include respond-to(d) {
+          &:hover {
+            & a {
+              color: $button-background-color;
+            }
+          }
+        }
+
+        & a {
+
+        }
+      }
+
+    }
+
+    &__brand {
+      position: absolute;
+      height: 100%;
+      left: 50%;
+      width: 273px;
+      transform: translateX(-50%);
+      &--img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        & img {
+          position: absolute;
+          bottom: 10px;
+        }
+
+        & .title {
+          position: relative;
+          width: 100px;
+          height: 58px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-52%, -50%);
+          font-family: Yellowtail;
+
+          display: flex;
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+          & span {
+            font-size: 45px;
+            letter-spacing: 1px;
+            color: $text-color-black;
+
+            &:last-of-type {
+              position: absolute;
+              top: 43%;
+              left: 50%;
+              transform: translateX(-40%);
+            }
+          }
+        }
+        & .catering {
+          position: absolute;
+          bottom: 10px;
+          width: 100%;
+          text-align: center;
+          text-transform: uppercase;
+          color: $text-color-green;
+          font-size: 12px;
+        }
+      }
+    }
+
+    &__cart {
+      position: absolute;
+      right: 0;
+      text-transform: uppercase;
+      color: $text-color-green;
+      line-height: 20px;
+      transition: all 0.4s;
+      @include respond-to(d) {
+        & a:hover {
+          color: $button-background-color;
+          & i {
+            font-size: larger;
+
+          }
+        }
+      }
+      & .text {
+
+        & .icon {
+
+        }
+      }
+
+      & .count {
+
+        &-number {
+
+        }
+        & .price {
+
+        }
+      }
+    }
+  }
+  & .img-slider {
+    position: relative;
+    width: 100%;
+
+    & ul {
+      position: relative;
+      width: 100%;
+      & li.slide-img {
+        width: 100%;
+        & img {
+          width: 100%;
+        }
+      }
+    }
+
+
+    & .slick-dots {
+      position: absolute;
+      bottom: 130px;
+      @include respond-to(1280) {
+
+        bottom: 50px;
+
+      }
+      & li {
+        margin: 0 7px;
+        & button {
+
+          &::before {
+            font-size: 8px;
+            color: $text-color-white;
+          }
+        }
+      }
+      & .slick-active {
+
+        & button {
+
+          &::before {
+
+            color: $text-color-white;
+          }
+        }
+      }
+    }
+
+    & .slogan {
+      width: 100%;
+      position: absolute;
+      top: 200px;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include respond-to(1280) {
+        top: 100px;
+        & h1 {
+          font-size: 40px;
+        }
+      }
+
+
+      & .text {
+        height: 215px;
+        width: 42.307692%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        @include respond-to(1280) {
+
+          height: 150px;
+
+        }
+        & .line {
+
+          width: 14.285714%;
+          height: 2px;
+          background-color: $text-color-white;
+        }
+
+        & h1 {
+          font-size: 60px;
+          color: $text-color-white;
+          letter-spacing: 1px;
+          line-height: 60px;
+          text-transform: uppercase;
+          text-align: center;
+          @include respond-to(1280) {
+
+            font-size: 40px;
+
+          }
+        }
+      }
+      & .order {
+        background-color: $button-background-color;
+        outline: none;
+        border: 0;
+        height: 72px;
+        width: 273px;
+        margin-top: 60px;
+
+        & a {
+          text-transform: uppercase;
+          font-size: 16px;
+          color: $text-color-white;
+          font-family: $FontPTSerifBold;
+          height: 72px;
+          width: 273px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        @include respond-to(d) {
+          &:hover {
+            cursor: pointer;
+            background-color: darken($button-background-color, 10%);
+            transition: all 0.4s;
+          }
+        }
+      }
+    }
+    & .arrow-down {
+      width: 6.5%;
+      height: 45px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      color: $text-color-green;
+
+      & a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        @include respond-to(d) {
+          &:hover {
+
+            & i {
+              font-size: larger;
+              color: $button-background-color;
+            }
+          }
+        }
+      }
+
+      @include respond-to(d) {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

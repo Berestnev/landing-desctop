@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="libraries/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="libraries/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="bundle.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <script src="scripts/jQuery.js"></script>
+    <script type="text/javascript" src="libraries/slick/slick.min.js"></script>
+    <script src="scripts/main.js"></script>
+</head>
+<body>
+<section id="header" class="header">
+    <div class="wrapper">
+            <nav id="header-nav" class="header__nav">
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i></a></li>
+                    <li><a href="#about-us">about us</a></li>
+                    <li><a href="#catering">pages</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#menu">menu</a></li>
+                    <li><a href="#gallery">gallery</a></li>
+                    <li><a href="#blog">blog</a></li>
+                    <li><a href="#footer">contacts</a></li>
+                </ul>
+            </nav>
+    </div>
+</section>
+<section id="home" class="home">
+    <div class="wrapper">
+        <header class="home-header">
+            <div class="home-header__contacts">
+                <div class="telephone">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg>
+                    </span>
+                    <a href="tel:+380441234567890" class="number">123-456-7890</a>
+                </div>
+                <div class="e-mail">
+                    <a href="mailto:info@yoursite.com" class="e-mail">info@yoursite.com</a>
+                </div>
+            </div>
+            <div class="home-header__brand">
+                <div class="home-header__brand--img">
+                    <img src="img/logo1.png" alt="brand">
+                    <p class="title">
+                        <span>Royal</span>
+                        <span>event</span>
+                    </p>
+                    <span class="catering">catering</span>
+                </div>
+            </div>
+            <div class="home-header__cart" id="cart">
+                <a href="#">
+                <p class="text">
+                    <span class="icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    your cart:
+                </p>
+                <p class="count">
+                    <span class="count-number">
+                        0
+                    </span>
+                    items - $
+                    <span class="price">
+                        0.00
+                    </span>
+                </p>
+                </a>
+            </div>
+        </header>
+    </div>
+    <div class="img-slider">
+        <div class="slogan">
+            <div class="text">
+                <span class="line"></span>
+                <h1>
+                    A perfect blend of
+                    sensational food
+                </h1>
+                <span class="line"></span>
+            </div>
+            <button class="order">
+               <a href="#">order service</a>
+            </button>
+        </div>
+        <ul>
+            <li class="slide-img"> <img class="slide" src="img/1.png" alt="img"></li>
+            <li class="slide-img"> <img class="slide" src="img/2.png" alt="img"></li>
+            <li class="slide-img"> <img class="slide" src="img/3.png" alt="img"></li>
+            <li class="slide-img"> <img class="slide" src="img/4.png" alt="img"></li>
+        </ul>
+        <div class="arrow-down">
+               <a href="#"><i class="fas fa-angle-down"></i></a>
+        </div>
+    </div>
+
+</section>
+<section id="catering" class="catering">
+    <div class="wrapper">
+        <header class="catering__header title">
+            <span class="title__name">
+                catering
+            </span>
+            <div class="title__description">
+               <h2>
+                   Welcome to the Best
+                   <br>
+                   Catering Company
+               </h2>
+            </div>
+            <img src="img/header.png" alt="" class="title__img">
+            <span class="title__border"></span>
+        </header>
+        <div class="catering__options">
+            <div class="catering__options--option">
+                <p class="text">
+                    Events
+                </p>
+                <img class="img" src="img/catering/option1.png" alt="">
+                <div class="arrow-down">
+                    <a href="#"><i class="fas fa-angle-down"></i></a>
+                </div>
+            </div>
+            <div class="catering__options--option">
+                <p class="text">
+                    Food & Drinks
+                </p>
+                <img class="img" src="img/catering/option2.png" alt="">
+                <div class="arrow-down">
+                    <a href="#"><i class="fas fa-angle-down"></i></a>
+                </div>
+            </div>
+            <div class="catering__options--option">
+                <p class="text">
+                    Venues
+                </p>
+                <img class="img" src="img/catering/option3.png" alt="">
+                <div class="arrow-down">
+                   <a href="#"><i class="fas fa-angle-down"></i></a>
+                </div>
+            </div>
+        </div>
+        <button>
+            <a href="#">
+                more about us
+            </a>
+        </button>
+    </div>
+</section>
+<section id="about-us" class="about-us">
+    <div class="about-us__background">
+        <div class="wrapper">
+            <header class="about-us__header title">
+                <span class="title__name">
+                    about us
+                </span>
+                <div class="title__description">
+                    <h2>
+                        A Short Story About
+                        <br>
+                        Our Company
+                    </h2>
+                </div>
+                <img src="img/header-white.png" alt="" class="title__img">
+                <span class="title__border"></span>
+            </header>
+            <div class="about-us__content">
+                <div class="about-us__content--img">
+                    <img src="img/about-us/about-us-content-img.png" alt="">
+                </div>
+                <div class="about-us__content--text">
+                    <h3>
+                        A Perfect Blend of Sensational Food, Inspiring Ideas and Professional Staff
+                    </h3>
+                    <p>
+                        <span>1997</span>
+                        - Lorem ipsum dolor sit amet, consecte adipiscing elit, sed
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure.
+                        dolor in hendrerit in vulputate velit.
+                    </p>
+                    <button>
+                        <a href="#">
+                            read full story
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="menu" class="menu">
+    <div class="wrapper">
+        <header class="menu__header title">
+            <span class="title__name">
+                catering
+            </span>
+            <div class="title__description">
+                <h2>
+                    Our Menu
+                </h2>
+            </div>
+            <img src="img/header.png" alt="" class="title__img">
+            <span class="title__border"></span>
+        </header>
+        <div class="menu__content">
+            <div class="menu__content--banners">
+                <div class="banner">
+                    <div class="banner-img">
+                        <img src="img/menu/canapes.png" alt="">
+                    </div>
+                    <h4>
+                        canapes
+                    </h4>
+                    <div class="arrow-down">
+                        <a href="#"><i class="fas fa-angle-down"></i></a>
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="banner-img">
+                        <img src="img/menu/plates.png" alt="">
+                    </div>
+                    <h4>
+                        small plates
+                    </h4>
+                    <div class="arrow-down">
+                        <a href="#"><i class="fas fa-angle-down"></i></a>
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="banner-img">
+                        <img src="img/menu/sweets.png" alt="">
+                    </div>
+                    <h4>
+                        sweets
+                    </h4>
+                    <div class="arrow-down">
+                        <a href="#"><i class="fas fa-angle-down"></i></a>
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="banner-img">
+                        <img src="img/menu/drinks.png" alt="">
+                    </div>
+                    <h4>
+                        drinks
+                    </h4>
+                    <div class="arrow-down">
+                        <a href="#"><i class="fas fa-angle-down"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p>
+                & much more sensational  food & drinks...
+            </p>
+            <button>
+                <a href="#">
+                    view full menu
+                </a>
+            </button>
+        </div>
+    </div>
+</section>
+<section id="services" class="services">
+    <div class="wrapper">
+        <header class="services__header title">
+            <span class="title__name">
+                services
+            </span>
+            <div class="title__description">
+                <h2>
+                    Planning a Fabulous
+                    <br>
+                    Event?
+                </h2>
+            </div>
+            <img src="img/header.png" alt="" class="title__img">
+            <span class="title__border"></span>
+        </header>
+        <div class="services__content">
+            <div class="services__content--types">
+                <div class="type">
+                    <header>
+                        <a href="#">
+                            <h4>
+                                weddings
+                                <span class="border"></span>
+                            </h4>
+                            <p class="number">
+                                01
+                            </p>
+                        </a>
+                    </header>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    </p>
+                </div>
+                <div class="type">
+                    <header>
+                        <a href="#">
+                            <h4>
+                                corporate
+                                <span class="border"></span>
+                            </h4>
+                            <p class="number">
+                                02
+                            </p>
+                            </a>
+                    </header>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    </p>
+                </div>
+                <div class="type">
+                    <header>
+                        <a href="#">
+                            <h4>
+                                socials
+                                <span class="border"></span>
+                            </h4>
+                            <p class="number">
+                                03
+                            </p>
+                        </a>
+                    </header>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    </p>
+                </div>
+            </div>
+            <div class="services__content--img">
+                <img src="img/services/services.png" alt="">
+            </div>
+            <div class="services__content--types">
+                <div class="type">
+                    <header>
+                        <a href="#">
+                            <p class="number">
+                                04
+                            </p>
+                            <h4>
+                                picnics
+                                <span class="border"></span>
+                            </h4>
+                        </a>
+                    </header>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    </p>
+                </div>
+                <div class="type">
+                    <header>
+                        <a href="#">
+                            <p class="number">
+                                05
+                            </p>
+                            <h4>
+                                festivals
+                                <span class="border"></span>
+                            </h4>
+                        </a>
+                    </header>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    </p>
+                </div>
+                <div class="type">
+                    <header>
+                        <a href="#">
+                            <p class="number">
+                                06
+                            </p>
+                            <h4>
+                                private Paties
+                                <span class="border"></span>
+                            </h4>
+                        </a>
+                    </header>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    </p>
+                </div>
+            </div>
+            <button>
+                <a href="#">
+                    more services
+                </a>
+            </button>
+        </div>
+
+    </div>
+</section>
+<section id="book" class="book">
+    <div class="wrapper">
+        <header class="book__header title">
+            <span class="title__name">
+                book today!
+            </span>
+            <div class="title__description">
+                <h2>
+                    Book Your Tasting Session
+                    <br>
+                    or Discuss Your Project
+                </h2>
+            </div>
+            <img src="img/header-white.png" alt="" class="title__img">
+            <span class="title__border"></span>
+        </header>
+        <button>
+            <a href="#">
+                send free request
+            </a>
+        </button>
+    </div>
+</section>
+<section id="testimonials" class="testimonials">
+    <div class="wrapper">
+        <header class="testimonials__header title">
+            <span class="title__name">
+                testimonials
+            </span>
+            <div class="title__description">
+                <h2>
+                    Clients About Us
+                </h2>
+            </div>
+            <img src="img/header.png" alt="" class="title__img">
+            <span class="title__border"></span>
+        </header>
+        <div class="testimonials__slider">
+            <div class="left-button">
+                <i class="fas fa-angle-left"></i>
+            </div>
+            <div class="right-button">
+                <i class="fas fa-angle-right"></i>
+            </div>
+            <div class="testimonials__slider--comments">
+                <div class="slide">
+                    <div class="slide-img">
+                        <img src="img/testimonials/testimonials.png" alt="">
+                    </div>
+                    <div class="slide-comment">
+                        <p>
+                            “Having worked with a number of caterers over the years, their level of service was notably high and they were integral to making the day a success”.
+                        </p>
+                    </div>
+                    <div class="slide-author">
+                        <p>
+                        <span class="name">
+                            laura & Adam Ashley
+                        </span>
+                        <span class="coma">, </span>
+                        <span class="city">
+                            NY
+                        </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="blog" class="blog">
+    <div class="wrapper">
+        <header class="blog__header title">
+            <span class="title__name">
+                blog
+            </span>
+            <div class="title__description">
+                <h2>
+                    Recent Articles
+                </h2>
+            </div>
+            <img src="img/header.png" alt="" class="title__img">
+            <span class="title__border"></span>
+        </header>
+        <div class="blog__articles">
+            <div class="blog__articles--article">
+                <div class="img">
+                    <img src="img/article/article1.png" alt="">
+                </div>
+                <div class="info">
+                    <div class="date">
+                        <p>
+                            <span class="month">
+                                jun
+                            </span>
+                            <span class="day">
+                                20
+                            </span>
+                            <span class="coma">,</span>
+                            <span class="year">
+                                2016
+                            </span>
+                        </p>
+                    </div>
+                    <header>
+                        <h4 class="article-name">
+                            We Can Help Find a Location That’s Right for You
+                        </h4>
+                        <span class="line">
+
+                        </span>
+                    </header>
+                </div>
+            </div>
+            <div class="blog__articles--article">
+                <div class="img">
+                    <img src="img/article/article2.png" alt="">
+                </div>
+                <div class="info">
+                    <div class="date">
+                        <p>
+                            <span class="month">
+                                jun
+                            </span>
+                            <span class="day">
+                                20
+                            </span>
+                            <span class="coma">,</span>
+                            <span class="year">
+                                2016
+                            </span>
+                        </p>
+                    </div>
+                    <header>
+                        <h4 class="article-name">
+                            Catering Services for Fabulous Corporate Events
+                        </h4>
+                        <span class="line">
+
+                        </span>
+                    </header>
+
+
+                </div>
+            </div>
+            <div class="blog__articles--article">
+                <div class="img">
+                    <img src="img/article/article3.png" alt="">
+                </div>
+                <div class="info">
+                    <div class="date">
+                        <p>
+                            <span class="month">
+                                jun
+                            </span>
+                            <span class="day">
+                                20
+                            </span>
+                            <span class="coma">,</span>
+                            <span class="year">
+                                2016
+                            </span>
+                        </p>
+                    </div>
+                    <header>
+                        <h4 class="article-name">
+                            Planning a Wedding Menu Can Be Daunting
+                        </h4>
+                        <span class="line">
+
+                    </span>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <button>
+            <a href="#">
+                more articles
+            </a>
+        </button>
+    </div>
+</section>
+<section id="chef" class="chef">
+    <div class="chef__background">
+        <div class="wrapper">
+            <header class="chef__header title">
+                <span class="title__name">
+                    chef
+                </span>
+                <div class="title__description">
+                    <h2>
+                        Who’s Behind Great
+                        <br>
+                        Service?
+                    </h2>
+                </div>
+                <img src="img/header-white.png" alt="" class="title__img">
+                <span class="title__border"></span>
+            </header>
+            <div class="chef__content">
+                <div class="chef__content--img">
+                    <img src="img/chef/chef.png" alt="">
+                </div>
+                <div class="chef__content--text">
+                    <blockquote>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat  nulla facilisis at vero eros.”
+                    </blockquote>
+                    <span class="line">
+
+                    </span>
+                    <p class="master-name">
+                        <span class="name">
+                            Andreo Moreno,
+                        </span>
+
+                        <span class="position">
+                            Master-Chef
+                        </span>
+                    </p>
+                    <button>
+                        <a href="#">
+                            view all team
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="staff" class="staff">
+    <div class="wrapper">
+        <header class="staff__header title">
+            <span class="title__name">
+                staff
+            </span>
+            <div class="title__description">
+                <h2>
+                    Meet the team
+                </h2>
+            </div>
+            <img src="img/header.png" alt="" class="title__img">
+            <span class="title__border"></span>
+        </header>
+        <div class="staff__banners">
+            <div class="staff__banners--banner">
+                <div class="img">
+                    <img src="img/staff/staff1.png" alt="Amanda Finch">
+                </div>
+                <div class="info">
+                    <p class="name">
+                        Amanda Finch
+                    </p>
+                    <span class="position">Chef, Co-Founder</span>
+                </div>
+            </div>
+            <div class="staff__banners--banner">
+                <div class="img">
+                    <img src="img/staff/staff2.png" alt="Joseph Verder">
+                </div>
+                <div class="info">
+                    <p class="name">
+                        Joseph Verder
+                    </p>
+                    <span class="position">Chef</span>
+                </div>
+            </div>
+            <div class="staff__banners--banner">
+                <div class="img">
+                    <img src="img/staff/staff3.png" alt="Anthony Mann">
+                </div>
+                <div class="info">
+                    <p class="name">
+                        Anthony Mann
+                    </p>
+                    <span class="position">Waiter</span>
+                </div>
+            </div>
+            <div class="staff__banners--banner">
+                <div class="img">
+                    <img src="img/staff/staff4.png" alt="Julia Green">
+                </div>
+                <div class="info">
+                    <p class="name">
+                        Julia Green
+
+                    </p>
+                    <span class="position">Waitress</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="gallery" class="gallery">
+    <header class="gallery__header title">
+        <span class="title__name">
+            gallery
+        </span>
+        <div class="title__description">
+            <h2>
+                Check Our Recent
+                <br>
+                Projects
+            </h2>
+        </div>
+        <img src="img/header.png" alt="" class="title__img">
+        <span class="title__border"></span>
+    </header>
+    <div class="gallery__content">
+        <div class="gallery__content--column">
+            <img src="img/gallery/gallery1.png" alt=""><img src="img/gallery/gallery2.png" alt="">
+        </div>
+        <div class="gallery__content--column">
+            <img src="img/gallery/gallery3.png" alt=""><img src="img/gallery/gallery4.png" alt="">
+        </div>
+        <div class="gallery__content--column">
+            <img src="img/gallery/gallery5.png" alt="">
+        </div>
+    </div>
+    <button>
+        <a href="#">
+            view more projects
+        </a>
+    </button>
+</section>
+<section id="contact-us" class="contact-us">
+    <header class="contact-us__header title">
+        <span class="title__name">
+            contact us
+        </span>
+        <div class="title__description">
+            <h2>
+                Leave a Feadback or
+                <br>
+                Ask a Question
+            </h2>
+        </div>
+        <img src="img/header.png" alt="" class="title__img">
+        <span class="title__border"></span>
+    </header>
+    <form class="wrapper-sm" id="form-contact-us">
+        <span>
+            <input class="contact-us__custom-input" id="name" type="text" placeholder="How can we call you?" />
+            <label for="name">Your name:</label>
+        </span>
+        <span>
+            <input class="contact-us__custom-input" id="email" type="text" placeholder="example@email.com" /><label for="email">e-mail address:</label>
+        </span>
+        <br>
+        <span>
+            <textarea class="contact-us__custom-input" id="message"  placeholder="What do you think?"></textarea><label for="message">send a message:</label>
+        </span>
+    </form>
+    <button>
+        <a href="#">
+            send message
+        </a>
+    </button>
+</section>
+<section id="footer" class="footer">
+    <div class="arrow-down">
+        <a href="#header"><i class="fas fa-angle-up"></i>
+            <p>
+                top
+            </p>
+        </a>
+    </div>
+    <footer>
+        <div class="wrapper-sm">
+            <div class="footer__row">
+                <div class="footer__row--col">
+                    <div class="footer__contacts">
+                        <div class="footer__contacts--telephone">
+                            <a href="tel:+380441234567890" class="number">
+                                123-456-7890
+                            </a>
+                        </div>
+                        <div class="footer__contacts--e-mail">
+                            <a href="mailto:info@yoursite.com" class="e-mail">
+                                info@yoursite.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__row--col">
+                    <div class="footer__brand">
+                        <div class="footer__brand--img">
+                            <img src="img/logo1.png" alt="brand">
+                            <p class="title">
+                                <span>Royal</span>
+                                <span>event</span>
+                            </p>
+                            <span class="catering">catering</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__row--col">
+                    <div class="footer__address">
+                        <p>
+                            123, new lenox
+                        </p>
+                        <p>
+                            chicago, il 60606
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__row">
+                <div class="footer__row--col">
+                    <div class="footer__soc">
+                        <div class="footer__soc--twitter">
+                            <a href="https://twitter.com/twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="footer__soc--facebook">
+                            <a href="https://www.facebook.com/">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="footer__soc--tumblr">
+                            <a href="https://www.tumblr.com/">
+                                <i class="fab fa-tumblr"></i>
+                            </a>
+                        </div>
+                        <div class="footer__soc--instagram">
+                            <a href="https://www.instagram.com/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__row--col">
+                    <p class="rights">
+                        Ancora © 2016 All Rights Reserved <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</section>
+</body>
+</html>

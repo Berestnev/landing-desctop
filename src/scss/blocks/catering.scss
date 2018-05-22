@@ -1,0 +1,65 @@
+@import "../partials/params";
+@import "../partials/mixins";
+@import "../adds/fonts";
+
+
+.catering {
+
+  &__header {
+    margin-bottom: 60px;
+  }
+
+  @include headers;
+
+  &__options {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 65px;
+    &--option {
+      width: 31.623931%;
+      position: relative;
+      & .text {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        font-size: 45px;
+        font-family: Yellowtail;
+        letter-spacing: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $text-color-white;
+      }
+      & .img {
+        width: 100%;
+      }
+      & .arrow-down {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        & a {
+          width: 80px;
+          height: 40px;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          @include respond-to(d) {
+            &:hover {
+
+              & i {
+                font-size: larger;
+                color: $button-background-color;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+ @include buttons;
+}

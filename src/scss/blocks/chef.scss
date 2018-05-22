@@ -1,0 +1,118 @@
+@import "../partials/params";
+@import "../partials/mixins";
+@import "../adds/fonts";
+
+
+.chef {
+  z-index: 1;
+  background-color: $section-background-color;
+  margin-bottom: 0;
+  padding-bottom: 170px;
+  @include headers {
+    & .title__name, .title__description > h2 {
+      color: $text-color-white;
+    }
+    & .title__border {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+  &__background {
+    height: 586px;
+    width: 100%;
+    padding-top: 110px;
+    background-image: url("img/chef/chef-background.png");
+    background-size: cover;
+  }
+  & .wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+  &__header {
+
+  }
+
+  &__content {
+    display: flex;
+
+    & > div {
+      width: 50%;
+      box-sizing: border-box;
+    }
+    &--img {
+      //background-image: url("img/chef/chef.png");
+      //background-size: cover;
+      height: 541px;
+
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &--text {
+      height: 541px;
+      padding: 95px 70px 75px 85px;
+      //display: flex;
+      //flex-direction: column;
+      //justify-content: space-between;
+      background-color: #ffffff;
+      @include respond-to(1280) {
+       padding: 75px 50px 55px 65px;
+      }
+      & blockquote {
+        font-size: 14px;
+        letter-spacing: 0;
+        font-family: $FontPTSerifRegular;
+        color: $text-color-grey;
+        position: relative;
+        margin-bottom: 40px;
+        line-height: 24px;
+        &:before {
+          content: '‘‘';
+          font-size: 180px;
+          position: absolute;
+          top: 30px;
+          left: -15px;
+          letter-spacing: -18px;
+          font-family: "PTSerif-Regular", Helvetica, Arial, sans-serif;
+          color: rgba(128, 131, 105, 0.2);
+          line-height: 75px;
+        }
+        @include respond-to(1280) {
+          font-size: 12px;
+          line-height: 20px;
+          margin-bottom: 30px;
+        }
+      }
+      @include line;
+      & .line {
+        margin-bottom: 40px;
+        @include respond-to(1280) {
+          margin-bottom: 30px;
+        }
+      }
+
+      & .master-name {
+        margin-bottom: 57px;
+        @include respond-to(1280) {
+          margin-bottom: 45px;
+        }
+        & .name {
+          font-size: 20px;
+          color: $text-color-green;
+        }
+        & .position {
+          font-size: 14px;
+          font-family: $FontPTSerifRegular;
+          color: $text-color-grey;
+        }
+      }
+
+      @include buttons {
+        left: 0!important;
+        transform: translateX(0)!important;
+      }
+    }
+  }
+}

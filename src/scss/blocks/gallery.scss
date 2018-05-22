@@ -1,0 +1,47 @@
+@import "../partials/params";
+@import "../partials/mixins";
+@import "../adds/fonts";
+
+.gallery {
+  @include headers;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 750px;
+    margin-bottom: 57px;
+    &--column {
+      width: 32.142857%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      & img {
+        width: 100%;
+        height: 48.266666%;
+        position: relative;
+        transition: all 0.4s;
+        @include respond-to(d) {
+          &:hover {
+            border: 1px solid $button-background-color;
+            border-radius: 1%;
+
+          }
+        }
+      }
+      &:last-of-type {
+
+
+        & img {
+          height: 100%;
+        }
+
+      }
+    }
+
+  }
+
+  @include buttons;
+}
