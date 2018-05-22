@@ -12,6 +12,14 @@
     justify-content: space-between;
     &--article {
       width: 31.623931%;
+      box-sizing: border-box;
+      @include respond-to(d) {
+        &:hover {
+          border-left: 2px dotted $button-background-color;
+          border-right: 2px dotted $button-background-color;
+          background-color: rgba(255, 177, 139, 0.1);
+        }
+      }
       & .img {
         width: 100%;
         margin-bottom: 35px;
